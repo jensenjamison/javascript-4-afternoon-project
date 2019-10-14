@@ -69,7 +69,7 @@ class Manager extends Employee {
     this.reports.push(employee); 
   }
   fire(index) {
-    this.reports.splice(index,index)
+    this.reports.splice(index, 1)
   }
 }
 let carl = new Manager("carl", "grimes", "gmail.com", 15)
@@ -120,9 +120,11 @@ constructor(first_name, last_name, email, age, reports) {
     }
   }
   fire(index) {
-    this.reports.splice(index,index);
-
+    this.reports.splice(index,1);
   
+    this.bonus += 100
+ 
+    
   }
 }
 
